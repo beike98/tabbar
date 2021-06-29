@@ -1,13 +1,19 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <tab-bar></tab-bar>
+  </div>
 </template>
 
 <script>
-export default {
+import TabBar from './components/tabbar/TabBar.vue'
 
+export default {
+  components: {
+    TabBar
+  }
 }
 </script>
 
 <style>
-
+  @import url('./assets/css/base.css');
 </style>
